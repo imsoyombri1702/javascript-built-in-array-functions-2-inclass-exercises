@@ -9,8 +9,9 @@
     - เมื่อ Algorithm นี้ทำงาน จะต้องเห็นผลลัพธ์ด้านล่าง
 */
 
-// Start coding here
-
+function findItemLocation(products,productName){
+    return products.indexOf(productName)    // ใช้ในการค้นหาว่า Value ภายใน Array ว่ามีค่าตรงตามที่เราต้องการค้นหาหรือไม่ โดยถ้าค้นหาแล้วพบว่าตรงกัน ผลลัพธ์ที่ได้กลับมาจะเป็นเลข Index แต่ถ้าไม่จะได้ค่ากลับมาเป็น -1
+}
 const products = ["milk", "bread", "eggs", "butter", "cheese", "orange juice"];
 
 console.log(findItemLocation(products, "cereal box")); // -1
