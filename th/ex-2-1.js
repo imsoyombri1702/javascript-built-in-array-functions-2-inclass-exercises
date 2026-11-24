@@ -9,6 +9,10 @@
 */
 
 // Start coding here
+function organizeSeat(guestList, startSeatNo, numberOfGuest) {
+  guestList.splice(startSeatNo, numberOfGuest);     // ใช้ในการลบ เพิ่ม หรือแทนที่ Value ใน Array
+    return guestList;
+}
 
 const guestList = [
   "John",

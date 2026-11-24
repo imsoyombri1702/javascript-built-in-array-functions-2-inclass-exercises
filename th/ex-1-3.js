@@ -8,6 +8,9 @@
 */
 
 // Start coding here
+function availableSeat(guestList, number) {
+    return guestList.slice(0,number) // ใช้ในการ Copy ตัว Value ใน Array ต้นฉบับให้ไปอยู่ใน Array ใหม่
+}
 
 const guestList = [
   "John",
@@ -21,3 +24,4 @@ const guestList = [
 
 console.log(availableSeat(guestList, 2)); // [ 'John', 'Sarah' ]
 console.log(availableSeat(guestList, 4)); // [ 'John', 'Sarah', 'Michael', 'Emma' ]
+

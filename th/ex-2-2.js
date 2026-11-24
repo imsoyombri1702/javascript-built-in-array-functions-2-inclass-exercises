@@ -8,6 +8,11 @@
 */
 
 // Start coding here
+function findNLowestNumber(arrOfNumbers, n) {
+  return arrOfNumbers
+  .sort((a, b) => a - b)    // เรียงลำดับจากน้อยไปมาก
+  .slice(0, n);             // ตัดช่วงที่ต้องการออกมาเป็น Array ใหม่
+}
 
 const arrOfNumbers1 = [10, 3, 55, 0, 18];
 let result1 = findNLowestNumber(arrOfNumbers1, 3);
